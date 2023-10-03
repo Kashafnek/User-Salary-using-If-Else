@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var a=parseInt(prompt("Enter your Salary"))
+       if(a < 50000 && a >= 2){
+        var z= a + 8000;
+        document.write("One allowance is given: First Health allowance is 8,000"+"<br>"+"Net Salary: "+ z);
+       }
+       else if(a>=50000 && a<=100000){
+        var z= a + 13000 - 12000;
+        document.write("Two allowances are given: First Health allowance is 8,000"+"<br>"+ "Second Fuel allowance is 5,000"+"<br>"+"Income tax: 12000"+"<br>"+"Net Salary: "+z);
+       }
+       else if(a>100000 && a<=150000){
+        var z= a + 25000;
+        document.write("Four allowances are given: First Health allowance is 8,000"+"<br>"+ "Second Fuel allowance is 5,000"+"<br>"+ "Third conveyance allowance is 4,000" +"<br>"+ "Fourth Housing allowance is 8,000" +"<br>"+"Income tax: 18000"+"<br>"+"Net Salary: "+z);
+       }
+       else if(a>150000 && a<200000){
+        var z= a + 33500 - 25000;
+        document.write("Six allowances are given: First Health allowance is 8,000"+"<br>"+ "Second Fuel allowance is 5,000"+"<br>"+ "Third conveyance allowance is 4,000" +"<br>"+ "Fourth Housing allowance is 8,000" +"<br>"+"Fifth Tool and equipment allowance is 2500" +"<br>"+ "Sixth Travel allowance is 6,000" +"<br>"+"Income tax: 25000"+"<br>"+"Net Salary: "+z);
+       }
+       else if(a==200000){
+        document.write("Income tax 35,000"+"<br>"+"Net Salary:165,000")
+       }
+       else{
+        document.write("Nothing")
+       }
+    </script>
+</body>
+</html>
+
+<!-- TASK #1: Take a salary from the user. 
+    ✅️ If the salary is greater than 50,000, give them 2 allowances (like: health 12,000 & rent 2,000). 
+    ✅️ Then, the salary you get will be the user's net salary and you will make it visible to them. 
+    ✅️ If the user's salary is above 100,000, give them 4 allowances. 
+    ✅️ If their salary is below 50,000, give them 1 allowance. 
+    ✅️ If their salary is above 150,000, give them 6 allowances. 
+    ✅️ And if their salary is 200,000 (= condition), cut their salary.--> 
